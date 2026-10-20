@@ -16,6 +16,13 @@ import java.util.concurrent.TimeUnit;
 public class ConcurrentLinkedQueueDemo {
     private static final int NUM_SERVER_THREADS = 2;
 
+    private ConcurrentLinkedQueueDemo() {}
+
+    /**
+     * The entry point of the application.
+     * @param args Command line arguments (not used in this program).
+     * @throws InterruptedException if any thread performing operations is interrupted.
+     */
     public static void main(String[] args) throws InterruptedException {
         // High-performance, lock-free, unbounded queue using compare-and-swap operations
         ConcurrentLinkedQueue<String> logQueue = new ConcurrentLinkedQueue<>();

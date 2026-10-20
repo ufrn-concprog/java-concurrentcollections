@@ -14,6 +14,13 @@ import java.util.concurrent.TimeUnit;
 public class ConcurrentHashMapDemo {
     private static final int NUM_THREADS = 3;
 
+    private ConcurrentHashMapDemo() {}
+
+    /**
+     * The entry point of the application.
+     * @param args Command line arguments (not used in this program).
+     * @throws InterruptedException if any thread performing operations is interrupted.
+     */
     public static void main(String[] args) throws InterruptedException {
         // Shared live inventory map (Product Name -> Stock Quantity)
         ConcurrentHashMap<String, Integer> inventory = new ConcurrentHashMap<>();

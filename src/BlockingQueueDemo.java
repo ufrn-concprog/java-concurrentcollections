@@ -13,6 +13,12 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class BlockingQueueDemo {
     private static final int QUEUE_CAPACITY = 2;
 
+    private BlockingQueueDemo() {}
+
+    /**
+     * The entry point of the application.
+     * @param args Command line arguments (not used in this program).
+     */
     public static void main(String[] args) {
         // A bounded queue capped at two elements
         BlockingQueue<String> taskQueue = new LinkedBlockingQueue<>(QUEUE_CAPACITY);
