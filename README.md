@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Docs](https://img.shields.io/badge/docs-Javadoc-green)](./doc/index.html)
 
-This educational repository features a set of examples demonstrating thread-safe data structures and concurrent collections provided by the `java.util.concurrent` package in Java.
+This educational repository features a set of examples demonstrating thread-safe data structures and concurrent collections provided by the [`java.util.concurrent`](https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/util/concurrent/package-summary.html) package in Java.
 
 This project is part of the Concurrent Programming module at the [Federal University of Rio Grande do Norte (UFRN)](https://www.ufrn.br/), Natal, Brazil.
 
@@ -74,8 +74,6 @@ java -cp src ConcurrentLinkedQueueDemo
 # Run CopyOnWriteArrayList Demo
 java -cp src CopyOnWriteArrayListDemo
 ```
-
----
 
 ## 📄 License
 
